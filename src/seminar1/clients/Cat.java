@@ -35,4 +35,13 @@ public class Cat extends Animal {
     public String toString() {
         return super.toString()+"Discount("+discount+")";
     }
+
+    @Override
+    public void fly() {
+        System.out.println("Коты не летают");
+    }
+    @Override
+    public void swim(){
+        System.out.println("Коты не плавают");
+    }
 }

@@ -48,6 +48,17 @@ public class Animal {
         eat();
         sleep();
     }
+    public void toGo() {
+        System.out.println(this.getType()+" "+this.getNickName()+" идет");
+    }
+
+    public void fly(){
+        System.out.println(this.getType()+" "+this.getNickName()+" летит");
+    }
+
+    public void swim(){
+        System.out.println(this.getType()+" "+this.getNickName()+" плавает");
+    }
 
     private void wakeUp() {
         wakeUp("12:00");
@@ -72,6 +83,7 @@ public class Animal {
     private void sleep() {
         System.out.println("Животное уснуло!");
     }
+
 
     @Override
     public String toString() {
