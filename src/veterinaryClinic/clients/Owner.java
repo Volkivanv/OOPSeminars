@@ -1,4 +1,4 @@
-package seminar1.clients;
+package veterinaryClinic.clients;
 
 
 public class Owner {

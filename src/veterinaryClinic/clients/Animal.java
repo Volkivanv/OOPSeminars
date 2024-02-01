@@ -1,8 +1,8 @@
-package seminar1.clients;
+package veterinaryClinic.clients;
 
 import java.time.LocalDate;
 
-public class Animal {
+public abstract class Animal {
 
     // protected видно в классе и во всех наследниках
     protected String nickName;
@@ -42,23 +42,21 @@ public class Animal {
         this.illness = illness;
     }
 
-    public void lifeCycle() {
-        wakeUp("12:00");
-        hunt();
-        eat();
-        sleep();
-    }
-    public void toGo() {
-        System.out.println(this.getType()+" "+this.getNickName()+" идет");
-    }
+//    public void lifeCycle() {
+//        wakeUp("12:00");
+//        hunt();
+//        eat();
+//        sleep();
+//    }
 
-    public void fly(){
-        System.out.println(this.getType()+" "+this.getNickName()+" летит");
-    }
 
-    public void swim(){
-        System.out.println(this.getType()+" "+this.getNickName()+" плавает");
-    }
+//    public void fly(){
+//        System.out.println(this.getType()+" "+this.getNickName()+" летит");
+//    }
+//
+//    public void swim(){
+//        System.out.println(this.getType()+" "+this.getNickName()+" плавает");
+//    }
 
     private void wakeUp() {
         wakeUp("12:00");
@@ -76,9 +74,7 @@ public class Animal {
         System.out.println("Животное охотится!");
     }
 
-    private void eat() {
-        System.out.println("Животное ест!");
-    }
+    public abstract void eat();
 
     private void sleep() {
         System.out.println("Животное уснуло!");

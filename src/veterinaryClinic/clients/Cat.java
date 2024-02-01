@@ -1,9 +1,9 @@
-package seminar1.clients;
+package veterinaryClinic.clients;
 
 
 import java.time.LocalDate;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements Goable, Huntable {
 
     //Todo напомнить в чём разница в double
     Double discount;
@@ -35,13 +35,13 @@ public class Cat extends Animal {
     public String toString() {
         return super.toString()+"Discount("+discount+")";
     }
+    @Override
+    public void go() {
+        System.out.println(this.getType()+" "+this.getNickName()+" идет");
+    }
 
     @Override
-    public void fly() {
-        System.out.println("Коты не летают");
-    }
-    @Override
-    public void swim(){
-        System.out.println("Коты не плавают");
+    public void eat() {
+        System.out.println("Кошка поймала мышку и ест");
     }
 }
