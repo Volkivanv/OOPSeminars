@@ -1,4 +1,7 @@
-package veterinaryClinic.clients;
+package veterinaryClinic.core.clients;
+
+import veterinaryClinic.core.illnesses.Illness;
+import veterinaryClinic.core.owners.Owner;
 
 import java.time.LocalDate;
 

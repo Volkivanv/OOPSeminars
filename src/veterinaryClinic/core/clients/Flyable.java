@@ -1,8 +1,8 @@
-package veterinaryClinic.clients;
+package veterinaryClinic.core.clients;
 
 public interface Flyable {
     void fly();
     default double getFlySpeed(){
-        return 70;
+        return 90;
     }
 }

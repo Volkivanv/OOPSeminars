@@ -1,5 +1,11 @@
-package veterinaryClinic.clients;
+package veterinaryClinic.core.clients.impl;
 
+
+import veterinaryClinic.core.illnesses.Illness;
+import veterinaryClinic.core.owners.Owner;
+import veterinaryClinic.core.clients.Animal;
+import veterinaryClinic.core.clients.Goable;
+import veterinaryClinic.core.clients.Huntable;
 
 import java.time.LocalDate;
 
@@ -37,11 +43,21 @@ public class Cat extends Animal implements Goable, Huntable {
     }
     @Override
     public void go() {
-        System.out.println(this.getType()+" "+this.getNickName()+" идет");
+        System.out.println(this.getType()+" "+this.getNickName()+" идет со скоростью "+ this.getRunSpeed() );
+    }
+
+    @Override
+    public double getRunSpeed() {
+        return Goable.super.getRunSpeed();
     }
 
     @Override
     public void eat() {
         System.out.println("Кошка поймала мышку и ест");
+    }
+
+    @Override
+    public void hunt() {
+
     }
 }

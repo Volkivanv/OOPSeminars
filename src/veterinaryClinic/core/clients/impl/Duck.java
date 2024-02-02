@@ -1,8 +1,15 @@
-package veterinaryClinic.clients;
+package veterinaryClinic.core.clients.impl;
+
+import veterinaryClinic.core.clients.Animal;
+import veterinaryClinic.core.clients.Flyable;
+import veterinaryClinic.core.clients.Goable;
+import veterinaryClinic.core.clients.Swimable;
+import veterinaryClinic.core.illnesses.Illness;
+import veterinaryClinic.core.owners.Owner;
 
 import java.time.LocalDate;
 
-public class Duck extends Animal implements Goable, Swimable, Flyable{
+public class Duck extends Animal implements Goable, Swimable, Flyable {
     public Duck(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }

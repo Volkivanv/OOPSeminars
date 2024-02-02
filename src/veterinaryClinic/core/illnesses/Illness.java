@@ -1,4 +1,4 @@
-package veterinaryClinic.clients;
+package veterinaryClinic.core.illnesses;
 
 
 public class Illness {

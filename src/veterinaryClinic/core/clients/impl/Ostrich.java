@@ -1,12 +1,17 @@
-package veterinaryClinic.clients;
+package veterinaryClinic.core.clients.impl;
 
 
+
+import veterinaryClinic.core.illnesses.Illness;
+import veterinaryClinic.core.owners.Owner;
+import veterinaryClinic.core.clients.Animal;
+import veterinaryClinic.core.clients.Goable;
 
 import java.time.LocalDate;
 
 
 
-public class Ostrich extends Animal implements Goable{
+public class Ostrich extends Animal implements Goable {
     public Ostrich(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }

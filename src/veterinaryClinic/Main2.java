@@ -1,9 +1,9 @@
 package veterinaryClinic;
 
-import veterinaryClinic.clients.Animal;
-import veterinaryClinic.clients.Cat;
-import veterinaryClinic.clients.Dog;
-import veterinaryClinic.clients.Goable;
+import veterinaryClinic.core.clients.Animal;
+import veterinaryClinic.core.clients.impl.Cat;
+import veterinaryClinic.core.clients.impl.Dog;
+import veterinaryClinic.core.clients.Goable;
 
 import java.util.ArrayList;
 import java.util.List;

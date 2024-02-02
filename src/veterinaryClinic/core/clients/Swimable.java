@@ -1,4 +1,4 @@
-package veterinaryClinic.clients;
+package veterinaryClinic.core.clients;
 
 public interface Swimable {
     void swim();
