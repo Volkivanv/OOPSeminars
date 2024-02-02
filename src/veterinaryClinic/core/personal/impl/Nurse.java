@@ -25,7 +25,7 @@ public class Nurse extends Personal implements ProcedureAble{
         procedures.add("наложение гипса");
         Random rand = new Random();
         int rand_int = rand.nextInt(procedures.size());
-        System.out.println("Медсестра "+ this.getName() + " делает " + animal + " " + procedures.get(rand_int));
+        System.out.println("Медсестра  "+ this.getName() + " делает " + animal + " " + procedures.get(rand_int));
     }
     public String getName(){
         return super.getName();
