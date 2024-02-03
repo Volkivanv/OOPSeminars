@@ -1,6 +1,9 @@
 package veterinaryClinic.core;
 
 import veterinaryClinic.core.clients.Animal;
+import veterinaryClinic.core.clients.Flyable;
+import veterinaryClinic.core.clients.Goable;
+import veterinaryClinic.core.clients.Swimable;
 import veterinaryClinic.core.personal.Personal;
 
 import java.util.ArrayList;
@@ -53,6 +56,35 @@ public class Clinic {
             System.out.println(personal);
         }
     }
+    public List<Animal> getGoable(){
+        List<Animal> goable = new ArrayList<>();
+        for (Animal animal : this.animals) {
+            if (animal instanceof Goable) {
+                goable.add(animal);
+            }
+        }
+        return goable;
+    }
+
+    public List<Animal> getFlyable(){
+        List<Animal> flyable = new ArrayList<>();
+        for (Animal animal : this.animals) {
+            if (animal instanceof Flyable) {
+                flyable.add(animal);
+            }
+        }
+        return flyable;
+    }
+    public List<Animal> getSwimable(){
+        List<Animal> swimable = new ArrayList<>();
+        for (Animal animal : this.animals) {
+            if (animal instanceof Swimable) {
+                swimable.add(animal);
+            }
+        }
+        return swimable;
+    }
+
 
 
 

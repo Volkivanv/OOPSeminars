@@ -80,6 +80,28 @@ public class Main {
         ((Doctor) doctor2).diagnose(duck1);
         ((Nurse) nurse1).procedure(cat1);
 
+        System.out.println("--------------------------------");
+        System.out.println("умеют ходить: \n");
+
+      //  System.out.println(cl.getGoable());
+        for(Animal an:cl.getGoable()){
+            System.out.println(an.getClass() + " " + an.getNickName() + "\n");
+        }
+
+        System.out.println("--------------------------------");
+        System.out.println("умеют летать: \n");
+        for(Animal an:cl.getFlyable()){
+            System.out.println(an.getClass() + " " + an.getNickName() + "\n");
+        }
+
+        System.out.println("--------------------------------");
+        System.out.println("умеют плавать: \n");
+        for(Animal an:cl.getSwimable()){
+            System.out.println(an.getClass() + " " + an.getNickName() + "\n");
+        }
+
+
+
 
 
     }
