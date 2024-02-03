@@ -37,15 +37,7 @@ public class DrugStore implements Iterable<Pharmacy2> {
         };
     }
 
-    @Override
-    public void forEach(Consumer<? super Pharmacy2> action) {
-        Iterable.super.forEach(action);
-    }
 
-    @Override
-    public Spliterator<Pharmacy2> spliterator() {
-        return Iterable.super.spliterator();
-    }
 
     public List<Pharmacy2> getPharmacies() {
         return this.pharmacies;
