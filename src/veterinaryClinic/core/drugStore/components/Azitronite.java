@@ -4,7 +4,7 @@ import veterinaryClinic.core.drugStore.Component;
 
 public class Azitronite extends Component {
 
-    public Azitronite(String title, Double weight, int power) {
+    public Azitronite(String title, Double weight, Double power) {
         super(title, weight, power);
     }
 }
